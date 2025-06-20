@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/src/images/icone.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/quinhentismo.css">
+    <title>Barroco</title>
+</head>
+<body>
+     <header>
+        <nav>
+            <select name="periodos" id="periodosLiterarios">
+                <option value="">Períodos Literários</option>
+                <option value="/index.html">Ínico</option>
+                <option value="/src/pages/quinhentismo.html">Quinhentismo</option>
+                <option value="/src/pages/barroco.html">Barroco</option>
+                <option value="/src/pages/arcadismo.html">Arcadismo</option>
+            </select>
+            <a href="/index.html"><img src="/src/images/Logo.png" alt="logo do site de literatura"></a>
+            <a href="/src/pages/questoes.html">Praticar</a>
+        </nav>
+    </header>
+    <main>
+        <h1>BARROCO (1601 - 1768)</h1>
+        <div class="descricaoContainer">
+            <div class="cardInfo">
+                <p>
+                    Sendo a primeira escola literária do Brasil. Desenvolveu-se num contexto de forte influência da Igreja Católica, especialmente por conta da Contrarreforma, que buscava reafirmar os valores religiosos frente ao avanço do protestantismo.
+                    Religiosidade intensa, com temor a Deus e preocupação com a salvação da alma.
+                    Conflito entre o espiritual e o material, refletindo a moral católica da época.
+                    Linguagem rebuscada, cheia de figuras de linguagem, exageros e contradições.
+                    Uso de antíteses e paradoxos, como vida/morte, céu/inferno, alma/corpo.
+                    Influência portuguesa, principalmente do Barroco de autores como Padre Vieira e Camões.
+                </p>
+            </div>
+            <div class="cardInfo">
+                <h2>Dica de Estudo</h2>
+                <p>Barroco costuma aparecer em textos literários para interpretação, e a banca espera que você perceba os conflitos da época</p>
+                <ul>
+                    <li>O dualismo (ex.: alma x corpo, céu x terra);</li>
+                    <li>A religiosidade intensa e o medo do pecado</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Principais Autores</h2>
+        <div class="autoresContainer">
+            <div class="cardAutor">
+                <img src="/src/images/autor3.png" alt="">
+                <div class="descricaoAutor">
+                    <h2>Gregório de Matos</h2>
+                    <p>Conhecido como “Boca do inferno”, fez mais de 700 textos de poemas líricos, satíricos, eróticos e religiosos.</p>
+                    <h3>Obras</h3>
+                    <ul>
+                        <li>A cidade da Bahia</li>
+                        <li>Contemplando nas cousas do mundo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cardAutor">
+                <img src="/src/images/autor4.png" alt="">
+                <div class="descricaoAutor">
+                    <h2>Padre António Vieira no Brasil</h2>
+                    <p>Conhecido como “Boca do inferno”, fez mais de 700 textos de poemas líricos, satíricos, eróticos e religiosos.</p>
+                    <h3>Obras</h3>
+                    <ul>
+                        <li>A cidade da Bahia</li>
+                        <li>Contemplando nas cousas do mundo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+         document.getElementById("periodosLiterarios").addEventListener("change", function () {
+        const url = this.value;
+        if (url) {
+            window.location.href = url;
+        }
+        });
+    </script>
+</body>
+</html>

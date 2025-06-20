@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/src/images/icone.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/quinhentismo.css">
+    <title>Quinhentismo</title>
+</head>
+<body>
+     <header>
+        <nav>
+            <select name="periodos" id="periodosLiterarios">
+                <option value="">Períodos Literários</option>
+                <option value="/index.html">Ínico</option>
+                <option value="/src/pages/quinhentismo.html">Quinhentismo</option>
+                <option value="/src/pages/barroco.html">Barroco</option>
+                <option value="/src/pages/arcadismo.html">Arcadismo</option>
+            </select>
+            <a href="/index.html"><img src="/src/images/Logo.png" alt="logo do site de literatura"></a>
+            <a href="/src/pages/questoes.html">Praticar</a>
+        </nav>
+    </header>
+    <main>
+        <h1>QUINHENTISMO (1500 - 1601)</h1>
+        <div class="descricaoContainer">
+            <div class="cardInfo">
+                <p>
+                    O Quinhentismo foi o primeiro movimento literário do Brasil, surgido no século XVI, no período da chegada dos portugueses. Não é considerado uma escola literária, mas sim uma fase marcada por dois tipos principais de textos:
+                    Literatura de informação: escrita por viajantes e cronistas, como Pero Vaz de Caminha, descrevendo o território, a natureza e os povos indígenas para informar a Coroa portuguesa.
+                    Literatura jesuítica: produzida por missionários, como Padre Anchieta, com foco religioso e pedagógico, visando à catequese dos indígenas.
+                    Essa literatura tinha caráter utilitário e documentava o início da colonização.
+                </p>
+            </div>
+            <div class="cardInfo">
+                <h2>Dica de Estudo</h2>
+                <p>Foque em diferenciar os dois tipos de textos da época:</p>
+                <ul>
+                    <li>Literatura de informação (descritiva e objetiva, como a carta de Pero Vaz de Caminha);</li>
+                    <li>Literatura jesuítica (religiosa e catequizadora, como os textos de Padre Anchieta).</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Principais Autores</h2>
+        <div class="autoresContainer">
+            <div class="cardAutor">
+                <img src="/src/images/autor1.png" alt="">
+                <div class="descricaoAutor">
+                    <h2>Pero de Magalhães Gândavo</h2>
+                    <p>Escreveu uma das primeiras descrições sobre o Brasil, destacando a natureza, os povos indígenas e a vida na colônia.</p>
+                    <h3>Obras</h3>
+                    <ul>
+                        <li>Tratado da terra do Brasil</li>
+                        <li>História da Província Santa Cruz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cardAutor">
+                <img src="/src/images/autor2.png" alt="">
+                <div class="descricaoAutor">
+                    <h2>Pero Lopes de Sousa</h2>
+                    <p>Participou da expedição de colonização do Brasil em 1530 e deixou um importante relato sobre o litoral e os primeiros contatos com os indígenas.</p>
+                    <h3>Obras</h3>
+                    <ul>
+                        <li>Tratado da terra do Brasil</li>
+                        <li>História da Província Santa Cruz</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById("periodosLiterarios").addEventListener("change", function () {
+        const url = this.value;
+        if (url) {
+            window.location.href = url;
+        }
+        });
+    </script>
+</body>
+</html>

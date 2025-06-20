@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/src/images/icone.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/questoes.css">
+    <title>Questões Práticas</title>
+</head>
+<body>
+    <header>
+         <nav>
+            <select name="periodos" id="periodosLiterarios">
+                <option value="">Períodos Literários</option>
+                <option value="/index.html">Ínico</option>
+                <option value="/src/pages/quinhentismo.html">Quinhentismo</option>
+                <option value="/src/pages/barroco.html">Barroco</option>
+                <option value="/src/pages/arcadismo.html">Arcadismo</option>
+            </select>
+            <a href="/index.html"><img src="/src/images/Logo.png" alt="logo do site de literatura"></a>
+            <a href="/src/pages/questoes.html">Praticar</a>
+        </nav>
+    </header>
+        <main>
+            <div class="container">
+                <h1>Questionário</h1>
+                <div class="box">
+                    <p><strong>Prova: ENEM – 2020 – Exame Nacional do Ensino Médio</strong><br>
+                    Uma planta é perturbada no seu ser<br>
+                    pelo estalo que a pisa.<br>
+                    Mas não foge. Fica e brota.<br>
+                    Gonçalves Tavares, o poema.<br>
+                    “Ser” requer pausa e silêncio.</p>
+
+                    <p>Considerando que se trata de um texto literário, uma interpretação que seja capaz
+                    de captar a sua complexidade abordaria o poema como:<br>
+                    a) Uma defesa dos nutrientes.<br>
+                    b) Um elogio da força armada.<br>
+                    c) Uma defesa dos direitos humanos.<br>
+                    d) Uma defesa da resistência civil.<br>
+                    e) Um ataque à passividade.</p>              
+                </div>
+                <a href="#" class="button" id="resposta1">Ver resposta</a>
+                
+                <div class="box">
+                    <p><strong>Prova: ENEM – 2016 – Exame Nacional do Ensino Médio – 2ª Aplicação</strong></p>
+
+                    <p>O poema de Adélia Prado, que segue a proposta moderna de tematização de fatos
+                    cotidianos, apresenta a prosaica ação de limpar panelas no qual o eu lírico
+                    reconhece:<br>
+                    a) Instruções<br>
+                    b) Expectativa de mando em relação à esposa.<br>
+                    c) Imposição dos afazeres conjugais.<br>
+                    d) Disposição para realizar tarefas masculinas.<br>
+                    e) Dissociação entre os sexos masculino e feminino.<br>
+                    f) Forma de consagração de cumplicidade no casamento.</p>
+                </div>
+                <a href="#" class="button" id="resposta2">Ver resposta</a>
+            </div>
+
+
+    </main>
+
+    <script>
+         const resp1 = document.querySelector("#resposta1");
+        const resp2 = document.querySelector("#resposta2");
+        resp1.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const box1 = resp1.previousElementSibling; 
+        const check = document.createElement("p");
+        check.textContent = "✅ Resposta correta: d) Uma defesa da resistência civil.";
+        check.classList.add("resposta-correta");
+
+        if (!box1.querySelector(".resposta-correta")) {
+            box1.appendChild(check);
+        }
+        });
+
+        resp2.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const box2 = resp2.previousElementSibling;
+        const check = document.createElement("p");
+        check.textContent = "✅ Resposta correta: f) Forma de consagração de cumplicidade no casamento.";
+        check.classList.add("resposta-correta");
+
+        if (!box2.querySelector(".resposta-correta")) {
+            box2.appendChild(check);
+        }
+        });
+
+        document.getElementById("periodosLiterarios").addEventListener("change", function () {
+        const url = this.value;
+        if (url) {
+            window.location.href = url;
+        }
+        });
+    </script>
+</body>
+</html>

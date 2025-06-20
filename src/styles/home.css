@@ -70,7 +70,7 @@ nav{
   height: 50vh;
   box-sizing: border-box; 
   padding: 40px 20px;
-  background-image: url(/src/images/fundoCard.png);
+  background-image: url(../images/fundoCard.png);
   background-position: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);

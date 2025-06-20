@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./src/images/icone.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>LiteraSpector</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <select name="periodos" id="periodosLiterarios">
+                <option value="">Períodos Literários</option>
+                <option value="./src/pages/quinhentismo.html">Quinhentismo</option>
+                <option value="./src/pages/barroco.html">Barroco</option>
+                <option value="./src/pages/arcadismo.html">Arcadismo</option>
+            </select>
+            <img src="./src/images/Logo.png" alt="logo do site de literatura">
+            <a href="./src/pages/questoes.html">Praticar</a>
+        </nav>
+    </header>
+    <main>
+        <div id="introducao">
+            <img src="./src/images/LogoEscura.png" alt="logo escura">
+            <p>Somos estudantes e criamos este site para te ajudar a revisar os períodos literários de forma fácil e rápida.</p>
+        </div>
+        <div class="carrosselContainer">
+            <button class="nav prev">❮</button>
+
+            <div class="carrossel">
+                <div class="cardCarrossel">
+                    <h2>QUINHENTISMO (1500 - 1601)</h2>
+                    <p>"Em tal maneira é graciosa que, querendo-a aproveitar, dar-se-á nela tudo, por bem das águas que tem!".</p>
+                    <a href="./src/pages/quinhentismo.html">Descubra</a>
+                </div>
+                <div class="cardCarrossel">
+                    <h2>BARROCO (1601 - 1768)</h2>
+                    <p>“Que falta nesta cidade?… Verdade.
+                        Que mais por sua desonra?… Honra.
+                        Falta mais que se lhe ponha?… Vergonha.”
+                    </p>
+                    <a href="./src/pages/barroco.html">Descubra</a>
+                </div>
+                <div class="cardCarrossel">
+                    <h2>ARCADISMO (1756 - 1825)</h2>
+                    <p>“Eu, Marília, não sou algum vaqueiro,
+                        que viva de guardar alheio gado;
+                        de tosco trato, de expressões grosseiro,
+                        dos frios gelos e dos sóis queimado.”
+                    </p>
+                    <a href="./src/pages/arcadismo.html">Descubra</a>
+                </div>
+                <div class="cardCarrossel">
+                    <h2>REALISMO (1850 - 1900)</h2>
+                    <p>
+                        “Não tive filhos, não transmiti a nenhuma criatura o legado da nossa miséria.”
+                    </p>
+                    <a href="./src/pages/realismo.html">Descubra</a>
+                </div>
+            </div>
+            <button class="nav next">❯</button>
+        </div>
+    </main>
+    <script src="./src/mains.js"></script>
+</body>
+</html>

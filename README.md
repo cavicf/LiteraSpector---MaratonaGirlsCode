@@ -47,7 +47,18 @@ Fui responsável pela **implementação do front-end**, atuando no desenvolvimen
 - Júlia Furtado – Documentação e design
 
 ---
+## 🚀 Como executar o projeto localmente
 
+Para acessar o projeto em sua máquina e rodar no Live Server, siga os passos:
+
+```bash
+# Clone o repositório
+git clone https://github.com/cavicf/LiteraSpector-MaratonaGirlsCode.git
+
+# Entre na pasta do projeto
+cd LiteraSpector-MaratonaGirlsCode
+```
+---
 ## 🏫 Organização
 
 Este projeto foi realizado no contexto da **Maratona Girls Code**, promovida pelo **Centro de Empreendedorismo da Universidade Federal de Itajubá (UNIFEI)**.
